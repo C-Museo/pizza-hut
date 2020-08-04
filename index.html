@@ -14,13 +14,14 @@
 <body>
   <div class="container">
   <h1>P!ZZA HUT</h1>
-  <img src= "location.webp" width="940" height="400"/>
+  <img src= "location.webp" class="img-fluid" width="940" height="400"/>
   <div class="jumbotron">
   <p>The homemade pizza dough is produced in-house daily and is another reason why the pizza at P!zza Hut always tastes better. </p>
   <p>The Twisty Bread, the signature Wingz and the delicious Double Meal are additional value-for-money options that keep our satisfied customers coming back time after time. When entertaining, a Hawaiian pizza, a Regina pizza, or a Peri Peri Chicken pizza from Pizza Inn is the obvious and perfect option to please crowds of all ages. </p>
   </div>
   <h2>Peep Our Menu</h2>
-  <img src="pizza 3.webp" class="float-right">
+  <div class="img-fluid" src="pizza 3.webp" ></div>
+  <!-- <img src="pizza 3.webp" class="float-right"  width="400" height="auto"> -->
   <ol>
     <li>Hawaiian</li>
     <li>Borewors</li>  
@@ -33,6 +34,30 @@
     <li>Roat Veg and Feta</li>
     <li>Nyama Feast</li>
   </ol>
+  <div class="jumbotron">
+  <h3>Want to have a taste? Make your order here.</h3>
+  <form action="/action_page.php">
+    <div class="form-group">
+        <label for="pizza">Select Pizza:</label>
+        <input type="pizza" class="form-control" placeholder="What are you craving?" id="pizza">
+        </div>
+        <div class="form-group">
+        <label for="size">Select Size:</label>
+        <input type="size" class="form-control" placeholder="Small, Medium or Large?" id="size">
+        </div>
+        <div class="form-group">
+        <label for="crust">Select Crust:</label>
+        <input type="crust" class="form-control" placeholder="Crust of Choice" id="crust">
+        </div>
+        <div class="form-group form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox"> Delivery
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Make Order</button>
+      </form>
+  
+  </div>
 
 
  
