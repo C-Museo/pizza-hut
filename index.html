@@ -53,32 +53,32 @@
         <label for="pizza">Select Pizza:</label>
                 <select class="browser-default custom-select custom-select-md mb-3 name" id="pizza"> 
                   <option selected value="">Choose your Pizza</option>
-                  <option value="Hawaaian">Margherita</option>
-                  <option value="Borewores">Bianca</option>
-                  <option value="BBQ Steak">Montanara</option>
-                  <option value="Peri-peri Chicken">Alla vodka</option>
-                  <option value="Veg Tikka">Melanze</option>
-                  <option value="Chicken and Beef pepperoni">Broccoli sausage</option>
-                  <option value="Roast Veg & Feta">Pesto</option>
-                  <option value="Nyama Feast">Meatball ricotta</option>
+                  <option value="Hawaaian">Hawaaian</option>
+                  <option value="Borewores">Borewores</option>
+                  <option value="BBQ Steak">BBQ Steak</option>
+                  <option value="Peri-peri Chicken">Peri-peri Chicken</option>
+                  <option value="Veg Tikka">Veg Tikka</option>
+                  <option value="Chicken and Beef pepperoni">Chicken and Beef pepperoni</option>
+                  <option value="Roast Veg & Feta">Roast Veg & Feta</option>
+                  <option value="Nyama Feast">Nyama Feast</option>
                 </select>
         </div>
         <div class="form-group">
         <label for="size">Select Size:</label>
         <select class="browser-default custom-select custom-select-md mb-3" id="size">
           <option selected value="">Select size here</option>
-          <option value="large">Large -- sh. 1200</option>
-          <option value="medium">Medium -- sh. 850</option>
-          <option value="small">Small -- sh. 600</option>
+          <option value="1200">Large -- sh. 1200</option>
+          <option value="850">Medium -- sh. 850</option>
+          <option value="600">Small -- sh. 600</option>
         </select>
         </div>
         <div class="form-group">
         <label for="crust">Select Crust:</label>
         <select class="browser-default custom-select custom-select-md mb-3" id="crust">
           <option selected value="">Select your preferred crust!</option>
-        <option value="Crispy">Crispy -- sh. 200</option>
-        <option value="Stuffed">Stuffed -- sh. 150</option>
-        <option value="Gluten-free">Gluten-free-- sh. 180</option>
+        <option value="200">Crispy -- sh. 200</option>
+        <option value="150">Stuffed -- sh. 150</option>
+        <option value="180">Gluten-free-- sh. 180</option>
       </select>
         </div>
         <div class="form-group">
@@ -92,8 +92,13 @@
           </div>
         <div class="form-group form-check">
           <label class="form-check-label">
-            <input type="radio" name="colors" value="yes" id="yes"> Deliver to me
-            <input type="radio" name="colors" value="no" id="no"> I will pick from shop
+            <label for="toppings">Delivery:</label>
+            <select class="browser-default custom-select custom-select-md mb-3" id="delivery">
+              <option selected value="">Select delivery method</option>
+            <option value="yes">Deliver it to me</option>
+          
+            <option value="no">I will pick from store</option>
+          </select>
           </label>
         </div>
         <button type="submit" class="btn btn-primary" onclick="verifyOder()">Make Order</button>
@@ -111,7 +116,9 @@
 <p id="myToppings"></p>
 <h3>Delivery Opton</h3>
 <p id="myDeliveryOption"></p><br>
-<button class="btn btn-primary" onclick="placeOrder()">Place Order</button>
+<b>Total Amount:Ksh <i id="amount"></i></b> <br>
+
+<button class="btn btn-primary" onclick="placeOrder()">Check Out</button>
       </div>
 
       </div>
